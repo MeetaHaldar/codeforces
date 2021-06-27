@@ -6,42 +6,7 @@ int main()
     cin >> a >> b;
     int c = a[a.length() - 1];
     int d = b[b.length() - 1];
-    // if (a[a.length() - 1] > 96 && b[b.length() - 1] > 96)
-    //     {
-    //         if (a[a.length() - 1] < b[b.length() - 1])
-    //     {
-    //         cout << "-1";
-    //     }
-    //     else if (a[a.length() - 1] > b[b.length() - 1])
-    //     {
-    //         {
-    //             cout << "+1";
-    //         }
-         
-    //     }
-    //        else
-    //         {
-    //             cout << "0";
-    //         }
-    //     }
-    // else if (a[a.length() - 1] < 96 && b[b.length() - 1] < 96)
-    // {
-    //     if (a[a.length() - 1] < b[b.length() - 1])
-    //     {
-    //         cout << "-1";
-    //     }
-    //     else if (a[a.length() - 1] > b[b.length() - 1])
-    //     {
-    //         {
-    //             cout << "+1";
-    //         }
-         
-    //     }
-    //        else
-    //         {
-    //             cout << "0";
-    //         }
-    // }
+   
      if (a[a.length() - 1] > 96)
     {
         c = c - 32;
