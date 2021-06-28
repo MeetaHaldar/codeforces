@@ -3,27 +3,29 @@ using namespace std;
 int main()
 {
     string a, b;
-    cin >> a >> b;
-    int c = a[a.length() - 1];
-    int d = b[b.length() - 1];
-   
-     if (a[a.length() - 1] > 96)
-    {
-        c = c - 32;
-    }
-   if (b[b.length() - 1] > 96)
-        d = d - 32;
 
-    if (c == d)
+    cin >> a >> b;
+    for (int i = 0; i < a.length(); i++)
+    {
+        if (a[i] > 96)
+        {
+            a[i] = a[i] - 32;
+        }
+        if (b[i] > 96)
+        {
+            b[i] = b[i] - 32;
+        }
+    }
+
+    if (a == b)
     {
         cout << "0";
     }
-    else if (c > d)
+    if (a > b)
     {
         cout << "1";
     }
-
-    else
+    if (a < b)
     {
         cout << "-1";
     }
