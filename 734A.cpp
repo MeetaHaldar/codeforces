@@ -4,8 +4,8 @@ int main()
 {
     int n, c1 = 0, c2 = 0;
     string a;
-    cin >> n;
-    cin >> a;
+    cin >> n >> a;
+
     for (int i = 0; i < n; i++)
 
     {
