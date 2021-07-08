@@ -4,25 +4,23 @@ int main()
 {
     int n, a, b;
     cin >> n;
-    for (int i = 0; i < n; i++)
+    for (; n > 0; n--)
     {
-        // int count = 0;
-        // cin >> a >> b;
-        // if (a % b == 0)
-        // {
-        //     cout << "0";
-        //     break;
-        // }
+        int count = 0;
+        cin >> a >> b;
+        if (a % b == 0)
+        {
+            cout << 0 << endl;
+        }
+
+        else if (a > b)
+        {
+            cout << b - (a % b) << endl;
+        }
         else
         {
-
-            while (a % b != 0)
-            {
-                a = a + 1;
-                count++;
-            }
+            cout << b - a << endl;
         }
-        cout << count << endl;
     }
 
     return 0;
