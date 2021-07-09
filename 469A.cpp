@@ -2,28 +2,40 @@
 using namespace std;
 int main()
 {
-    int n, k, p, j, t;
+    int n, a, p;
     cin >> n;
-
-    cin >> k;
-    int a[k];
-    for (int i = 0; i < k; i++)
+    int b[n];
+    cin >> a;
+    for (int i = 0; i < a; i++)
     {
-        cin >> a[i];
+
+        cin >> p;
+        b[p - 1] = p;
     }
-
-    cin >> p;
-    int b[p];
-    for (int i = 0; i < p; i++)
+    cin >> a;
+    for (int i = 0; i < a; i++)
     {
-        cin >> b[i];
+
+        cin >> p;
+        b[p - 1] = p;
     }
-
-    for (int i = 0, j = 1, t = 0; i < k, j <= n, t < p; i++, j++, t++)
+    for (int i = 0; i < n; i++)
     {
-        if (( j != a[i] && j = b[t] ) || ( j != b[t] && j = a[i] ))
+        if (b[i] == i + 1)
+        {
+            if(i==n-1)
+            {
+                 cout << "I become the guy.";
+                 break;
+            }
+            continue;
+
+        }
+
+        else
         {
             cout << "Oh, my keyboard!";
+            break;
         }
     }
 
