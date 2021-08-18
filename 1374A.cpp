@@ -11,10 +11,14 @@ int main()
 
         for (int i = n; i <= n; --i)
         {
-
-            if (i % x == y)
+            if (x >= n)
             {
-                cout << i<<endl;
+                cout << 0 << endl;
+                break;
+            }
+            else if (i % x == y)
+            {
+                cout << i << endl;
 
                 break;
             }
